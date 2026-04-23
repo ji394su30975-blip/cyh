@@ -42,7 +42,7 @@ export default function AboutPage() {
         {/* 底部按鈕 */}
         <section className="mt-32 text-center border-t-2 border-stone-200 pt-20">
           <h2 className="text-4xl font-black italic mb-12 uppercase tracking-tighter">
-            趕快去下單吧
+            趕快去下單吧。
           </h2>
           <div className="flex flex-col gap-4 items-center">
             <a 
