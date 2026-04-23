@@ -8,7 +8,7 @@ export default function AboutPage() {
         <section className="mb-24">
           <h1 className="text-7xl font-black text-[#009944] leading-tight mb-8">
             實話實說，<br />
-            我想要賺你的錢。1
+            我想要賺你的錢喔
           </h1>
           <p className="text-2xl text-stone-500 font-medium">
             與其編織一堆虛假的品牌故事，<br />
