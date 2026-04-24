@@ -464,6 +464,10 @@
     margin-left: calc(var(--spacing) * 1);
   }
 
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
+
   .ml-20 {
     margin-left: calc(var(--spacing) * 20);
   }
@@ -730,6 +734,10 @@
   .border-l-8 {
     border-left-style: var(--tw-border-style);
     border-left-width: 8px;
+  }
+
+  .border-\[\#5D4037\]\/20 {
+    border-color: oklab(40.1545% .0343426 .0267915 / .2);
   }
 
   .border-\[\#009944\] {
