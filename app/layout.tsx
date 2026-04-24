@@ -1,8 +1,9 @@
+import { ClerkProvider } from '@clerk/nextjs' // 1. 引入 Clerk 零件
 import "./css/style.css";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Header from "@/components/ui/header";
-import Footer from "@/components/ui/footer"; // 1. 引入 Footer
+import Footer from "@/components/ui/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -40,19 +41,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh-TW" className="scroll-smooth">
-      <body
-        className={`${inter.variable} ${nacelle.variable} bg-[#faf8f0] font-inter text-base text-stone-900 antialiased`}
-      >
-        {/* 2. 使用 flex-col 與 min-h-screen 確保內容不夠時 Footer 也在最下面 */}
-        <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
-          <Header />
-          <main className="grow">
-            {children}
-          </main>
-          <Footer /> {/* 3. 放在這裡 */}
-        </div>
-      </body>
-    </html>
+    // 2. 用 ClerkProvider 包裹整個網站
+    <ClerkProvider>
+      <html lang="zh-TW" className="scroll-smooth">
+        <body
+          className={`${inter.variable} ${nacelle.variable} bg-[#faf8f0] font-inter text-base text-stone-900 antialiased`}
+        >
+          <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
+            <Header />
+            <main className="grow">
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
