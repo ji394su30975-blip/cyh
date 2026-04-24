@@ -42,14 +42,14 @@ export default function AboutPage() {
         {/* 底部按鈕 */}
         <section className="mt-32 text-center border-t-2 border-stone-200 pt-20">
           <h2 className="text-4xl font-black italic mb-12 uppercase tracking-tighter">
-            趕快去下單吧。
+            趕快去下單吧
           </h2>
           <div className="flex flex-col gap-4 items-center">
             <a 
               href="/" 
               className="bg-[#009944] text-white text-3xl font-black px-16 py-7 rounded-full hover:scale-105 transition-transform shadow-2xl inline-block"
             >
-              直接支持 (回到首頁)
+              直接支持呢 (回到首頁)
             </a>
             <p className="text-stone-400 mt-4">夏威夷果、核桃、腰果、杏仁...通通買起來。</p>
           </div>
