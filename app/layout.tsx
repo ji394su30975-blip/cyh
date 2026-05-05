@@ -1,9 +1,11 @@
-import { ClerkProvider } from '@clerk/nextjs' // 1. 引入 Clerk 零件
+import { ClerkProvider } from '@clerk/nextjs'
 import "./css/style.css";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
+// 1. 引入 Vercel 統計零件 (剛剛你用 npm install 裝好的那個)
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,7 +27,7 @@ const nacelle = localFont({
 export const metadata = {
   title: "謙益行 QianYiHang | 三峽老街堅果專賣店 - 低溫烘焙、天然原味",
   description: "謙益行座落於三峽老街，嚴選高品質夏威夷果、腰果、核桃及綜合堅果。堅持純粹原味、低溫烘焙，為您保留最天然的營養。",
-  keywords: "三峽老街堅果, 謙益行, 夏威夷果, 養生堅果, 低溫烘焙堅果, 腰果推薦, 健康零食, 堅果專賣店",
+  keywords: "三峽老街堅果, 謙益行, 夏威夷果, 養生堅果, 低溫烘焙堅果, 腰果推薦, 健康零食, 堅果專專賣店",
   openGraph: {
     title: "謙益行 | 三峽老街嚴選堅果專賣",
     description: "傳承三峽老街溫度，提供最純粹、低溫烘焙的優質堅果。直接下單，快速到貨！",
@@ -41,7 +43,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // 2. 用 ClerkProvider 包裹整個網站
     <ClerkProvider>
       <html lang="zh-TW" className="scroll-smooth">
         <body
@@ -54,6 +55,8 @@ export default function RootLayout({
             </main>
             <Footer />
           </div>
+          {/* 2. 悄悄統計人數的零件放在這裡，只有老闆在後台看得到 */}
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
