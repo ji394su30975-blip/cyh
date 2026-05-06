@@ -14,51 +14,53 @@ export default function Header() {
   const { isSignedIn } = useUser();
 
   return (
-    <header className="fixed top-2 z-30 w-full md:top-5">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-white/15 px-3 shadow-lg backdrop-blur-md border border-white/20">
+    <header className="fixed top-2 z-30 w-full md:top-5 px-2">
+      <div className="mx-auto max-w-6xl">
+        {/* 調整左右內距 px-2 (手機版極限節省空間) */}
+        <div className="relative flex h-14 items-center justify-between gap-1 rounded-2xl bg-white/20 px-2 sm:px-4 shadow-lg backdrop-blur-md border border-white/30">
           
-          <div className="flex flex-1 items-center">
+          {/* 左側：Logo 區塊 */}
+          <div className="flex shrink-0 items-center">
             <Logo />
           </div>
 
-          <ul className="flex items-center gap-1 sm:gap-4">
+          {/* 右側：選單區塊 - 使用 gap-1 讓按鈕靠攏 */}
+          <ul className="flex items-center gap-1 sm:gap-4 overflow-x-hidden">
             <li>
-              <Link href="/products" className="text-xs sm:text-sm font-medium text-[#5D4037] hover:text-[#8D6E63] transition px-2">
+              <Link href="/products" className="text-[11px] sm:text-sm font-medium text-[#5D4037] hover:text-[#8D6E63] transition px-1">
                 產品介紹
               </Link>
             </li>
             <li>
-              <Link href="/about" className="text-xs sm:text-sm font-medium text-[#5D4037] hover:text-[#8D6E63] transition px-2">
+              <Link href="/about" className="text-[11px] sm:text-sm font-medium text-[#5D4037] hover:text-[#8D6E63] transition px-1">
                 品牌故事
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="text-xs sm:text-sm font-medium text-[#5D4037] hover:text-[#8D6E63] transition px-2">
+              <Link href="/contact" className="text-[11px] sm:text-sm font-medium text-[#5D4037] hover:text-[#8D6E63] transition px-1">
                 聯絡我們
               </Link>
             </li>
 
             <ClerkLoading>
-              <li className="w-8 h-8 rounded-full bg-stone-200/50 animate-pulse ml-2"></li>
+              <li className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-stone-200/50 animate-pulse"></li>
             </ClerkLoading>
 
             <ClerkLoaded>
               {!isSignedIn ? (
                 <li>
                   <SignInButton mode="modal">
-                    <button className="text-xs sm:text-sm font-medium text-[#5D4037] hover:text-[#8D6E63] transition px-2">
+                    <button className="text-[11px] sm:text-sm font-medium text-[#5D4037] hover:text-[#8D6E63] transition px-1">
                       會員登入
                     </button>
                   </SignInButton>
                 </li>
               ) : (
-                <li className="flex items-center ml-2">
+                <li className="flex items-center">
                   <UserButton 
-                    /* 🛠️ 重點：刪掉了報錯的 afterSignOutUrl，改由 .env 或 Clerk 控制台統一管理 */
                     appearance={{
                       elements: {
-                        avatarBox: "w-8 h-8 border border-[#5D4037]/20 shadow-sm"
+                        avatarBox: "w-7 h-7 sm:w-8 sm:h-8 border border-[#5D4037]/20 shadow-sm"
                       }
                     }}
                   />
@@ -66,12 +68,13 @@ export default function Header() {
               )}
             </ClerkLoaded>
 
+            {/* 立刻購買按鈕 - 加上 whitespace-nowrap 防止字體斷行 */}
             <li>
               <a
                 href="https://famistore.famiport.com.tw/famistore/users/2523514/malls/010000000000000000993270"
                 target="_blank"
                 rel="noreferrer"
-                className="bg-[#5D4037] text-white text-xs sm:text-sm shadow-md hover:bg-[#8D6E63] transition rounded-lg py-1.5 px-3 ml-1"
+                className="bg-[#5D4037] text-white text-[10px] sm:text-sm shadow-md hover:bg-[#8D6E63] transition rounded-lg py-1.5 px-2 sm:px-4 ml-1 whitespace-nowrap inline-block"
               >
                 立刻購買
               </a>
