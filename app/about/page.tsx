@@ -53,7 +53,7 @@ export default function AboutPage() {
             >
               立刻購買
             </a>
-            <p className="text-stone-400 mt-4">夏威夷果、核桃、腰果、杏仁...通通買起來。</p>
+            <p className="text-stone-400 mt-4">夏威夷果、核桃、腰果、杏仁通通都買起來。</p>
           </div>
         </section>
 
