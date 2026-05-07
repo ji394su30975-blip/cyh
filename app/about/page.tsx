@@ -51,7 +51,7 @@ export default function AboutPage() {
               rel="noreferrer"
               className="bg-[#6B8E23] text-white text-2xl md:text-3xl font-black px-12 py-6 md:px-16 md:py-7 rounded-full hover:scale-105 transition-transform shadow-2xl inline-block"
             >
-              立刻購買 🥜
+              立刻購買
             </a>
             <p className="text-stone-400 mt-4">夏威夷果、核桃、腰果、杏仁...通通買起來。</p>
           </div>

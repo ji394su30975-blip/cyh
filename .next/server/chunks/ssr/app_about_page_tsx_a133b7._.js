@@ -21,7 +21,7 @@ function AboutPage() {
                     className: "mb-24",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-7xl font-black text-[#009944] leading-tight mb-8",
+                            className: "text-5xl md:text-7xl font-black text-[#6B8E23] leading-tight mb-8",
                             children: [
                                 "實話實說，",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -37,7 +37,7 @@ function AboutPage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-2xl text-stone-500 font-medium",
+                            className: "text-xl md:text-2xl text-stone-500 font-medium",
                             children: [
                                 "與其編織一堆虛假的品牌故事，",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -62,10 +62,10 @@ function AboutPage() {
                     className: "space-y-20",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                            className: "border-l-8 border-[#009944] pl-8",
+                            className: "border-l-8 border-[#6B8E23] pl-8",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-3xl font-bold mb-4",
+                                    className: "text-2xl md:text-3xl font-bold mb-4",
                                     children: "為什麼選「謙益行」？"
                                 }, void 0, false, {
                                     fileName: "[project]/app/about/page.tsx",
@@ -73,7 +73,7 @@ function AboutPage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xl leading-relaxed text-stone-600",
+                                    className: "text-lg md:text-xl leading-relaxed text-stone-600",
                                     children: [
                                         "因為這樣我才賺得到錢，",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -97,7 +97,7 @@ function AboutPage() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-3xl font-bold mb-4",
+                                    className: "text-2xl md:text-3xl font-bold mb-4",
                                     children: "關於我的「目標」"
                                 }, void 0, false, {
                                     fileName: "[project]/app/about/page.tsx",
@@ -105,7 +105,7 @@ function AboutPage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xl leading-relaxed text-stone-600",
+                                    className: "text-lg md:text-xl leading-relaxed text-stone-600",
                                     children: [
                                         "大家都說創業是為了夢想，",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -142,7 +142,7 @@ function AboutPage() {
                     className: "mt-32 text-center border-t-2 border-stone-200 pt-20",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-4xl font-black italic mb-12 uppercase tracking-tighter",
+                            className: "text-3xl md:text-4xl font-black italic mb-12 uppercase tracking-tighter text-[#5D4037]",
                             children: "趕快去下單吧"
                         }, void 0, false, {
                             fileName: "[project]/app/about/page.tsx",
@@ -153,9 +153,11 @@ function AboutPage() {
                             className: "flex flex-col gap-4 items-center",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "/",
-                                    className: "bg-[#009944] text-white text-3xl font-black px-16 py-7 rounded-full hover:scale-105 transition-transform shadow-2xl inline-block",
-                                    children: "購買頁面"
+                                    href: "https://famistore.famiport.com.tw/famistore/users/2523514/malls/010000000000000000993270",
+                                    target: "_blank",
+                                    rel: "noreferrer",
+                                    className: "bg-[#6B8E23] text-white text-2xl md:text-3xl font-black px-12 py-6 md:px-16 md:py-7 rounded-full hover:scale-105 transition-transform shadow-2xl inline-block",
+                                    children: "立刻購買"
                                 }, void 0, false, {
                                     fileName: "[project]/app/about/page.tsx",
                                     lineNumber: 48,
@@ -166,7 +168,7 @@ function AboutPage() {
                                     children: "夏威夷果、核桃、腰果、杏仁...通通買起來。"
                                 }, void 0, false, {
                                     fileName: "[project]/app/about/page.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 56,
                                     columnNumber: 13
                                 }, this)
                             ]

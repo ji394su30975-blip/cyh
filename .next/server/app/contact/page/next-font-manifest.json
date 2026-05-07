@@ -1,6 +1,7 @@
 {
+  "pages": {},
   "app": {
-    "[project]/app/(default)/page": [
+    "[project]/app/contact/page": [
       "static/media/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw-s.p.0faac26c.woff2",
       "static/media/nacelle_regular-s.p.802336a3.woff2",
       "static/media/nacelle_italic-s.p.6e3faeac.woff2",
@@ -9,6 +10,5 @@
     ]
   },
   "appUsingSizeAdjust": true,
-  "pages": {},
   "pagesUsingSizeAdjust": false
 }
