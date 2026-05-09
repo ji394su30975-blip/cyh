@@ -1,7 +1,12 @@
 "use client";
 
 export default function ProductsPage() {
-  // --- 謙益行嚴選產品清單 (城武修改確認版) ---
+  // --- 插入這一段：點擊監控函數 ---
+  const trackClick = (productName: string) => {
+    console.log(`💰 [精品監控] 有客人點擊了【${productName}】，正引導至全家下單頁面！`);
+  };
+
+  // --- 謙益行嚴選產品清單 ---
   const products = [
     {
       id: 1,
@@ -132,7 +137,8 @@ export default function ProductsPage() {
                     href={product.url} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="w-full block bg-[#009944] text-white py-4 rounded-2xl font-bold text-lg shadow-lg hover:bg-[#007a37] transition-all transform active:scale-95"
+                    onClick={() => trackClick(product.name)}
+                    className="w-full block bg-[#009944] text-white py-4 rounded-2xl font-bold text-lg shadow-lg hover:bg-[#007a37] transition-all transform active:scale-95 text-center"
                   >
                     前往購買
                   </a>
