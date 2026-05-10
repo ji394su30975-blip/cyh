@@ -1,15 +1,7 @@
 "use client";
 
 export default function ProductsPage() {
-  // --- 監控函數 (開頭) ---
-  const trackClick = (productName: string, url: string) => {
-    console.log(`\n🚨 【立刻購買案件】有人看中【${productName}】了！`);
-    setTimeout(() => {
-      window.location.href = url;
-    }, 150);
-  };
-
-  // --- 產品清單 (這裡最容易少括號) ---
+  // --- 謙益行嚴選產品清單 (城武修改確認版) ---
   const products = [
     {
       id: 1,
@@ -136,12 +128,14 @@ export default function ProductsPage() {
                 </div>
 
                 <div className="pt-2">
-                  <button 
-                    onClick={() => trackClick(product.name, product.url)} // 👈 這裡要補上 product.url
-                    className="w-full block bg-[#009944] text-white py-4 rounded-2xl font-bold text-lg shadow-lg hover:bg-[#007a37] transition-all transform active:scale-95 text-center"
+                  <a 
+                    href={product.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full block bg-[#009944] text-white py-4 rounded-2xl font-bold text-lg shadow-lg hover:bg-[#007a37] transition-all transform active:scale-95"
                   >
                     前往購買
-                  </button>
+                  </a>
                 </div>
               </div>
 
